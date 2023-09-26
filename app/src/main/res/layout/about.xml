@@ -1,0 +1,102 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/bar"
+		android:gravity="center_vertical"
+		android:background="?colorPrimaryDark"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize">
+		<LinearLayout 
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_width="50dp"
+			android:id="@+id/back"
+			android:clickable="true"
+			android:gravity="center"
+			android:focusable="true"
+			android:layout_height="?attr/actionBarSize">
+			<ImageView
+				android:src="@drawable/left_icon_black"
+				android:layout_width="30dp"
+				app:tint="?android:attr/textColorPrimary"
+				android:gravity="center"
+				android:layout_height="30dp"/>
+		</LinearLayout>
+		<TextView android:layout_marginLeft="5dp"
+			android:text="เกี่ยวกับ"
+			android:textSize="18dp"
+			android:textStyle="bold"
+			android:textColor="?colorAccent"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="20dp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<RelativeLayout
+			android:layout_marginTop="10dp"
+			android:background="?colorPrimary"
+			android:clickable="true"
+			android:focusable="true"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+			<RelativeLayout
+				android:background="?android:attr/selectableItemBackground"
+				android:gravity="center_vertical"
+				android:clickable="true"
+				android:focusable="true"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="50dp">
+				<TextView android:text="เวอร์ชั่นปัจจุบัน 1.0"
+					android:textSize="15dp"
+					android:layout_marginTop="2dp"
+					android:layout_marginLeft="15dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView android:src="@drawable/right_icon"
+					android:layout_width="25dp"
+					app:tint="?attr/colorControlNormal"
+					android:layout_alignParentEnd="true"
+					android:layout_marginRight="15dp"
+					android:layout_height="25dp"/>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout
+			android:background="?colorPrimary"
+			android:clickable="true"
+			android:focusable="true"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+			<RelativeLayout
+				android:background="?android:attr/selectableItemBackground"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:focusable="true"
+				android:layout_width="match_parent"
+				android:layout_height="50dp">
+				<TextView android:text="เวอร์ชั่นapi 29"
+					android:textSize="15dp"
+					android:layout_marginTop="2dp"
+					android:layout_marginLeft="15dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView android:src="@drawable/right_icon"
+					android:layout_width="25dp"
+					app:tint="?attr/colorControlNormal"
+					android:layout_alignParentEnd="true"
+					android:layout_marginRight="15dp"
+					android:layout_height="25dp"/>
+			</RelativeLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
+

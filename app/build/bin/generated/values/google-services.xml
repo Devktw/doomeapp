@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">17589222780-fhkhm1da8m1rb12m2j4s6auc76n47l32.apps.googleusercontent.com</string>
+    <string name="google_app_id" translatable="false">1:17589222780:android:4995fc77f96577d317b8f9</string>
+    <string name="gcm_defaultSenderId" translatable="false">17589222780</string>
+    <string name="google_api_key" translatable="false">AIzaSyB71XDbMZPW0cVAP1Yi70hS2BXhwYMF7UQ</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB71XDbMZPW0cVAP1Yi70hS2BXhwYMF7UQ</string>
+    <string name="firebase_database_url" translatable="false">https://doome-308fc-default-rtdb.firebaseio.com</string>
+    <string name="google_storage_bucket" translatable="false">doome-308fc.appspot.com</string>
+</resources>

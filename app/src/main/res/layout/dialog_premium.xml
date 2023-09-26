@@ -1,0 +1,127 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RelativeLayout 
+		android:layout_width="270dp" 
+		android:layout_height="wrap_content" >
+
+		<RelativeLayout 
+			android:paddingBottom="20dp"
+			android:paddingTop="40dp"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:theme="@style/WatchDark"
+			android:background="@drawable/cornor_dialog" 
+			android:layout_width="270dp" 
+			android:layout_height="wrap_content" >
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" >
+				<TextView android:textSize="20dp"
+
+					android:text="พิเศษสำหรับพรีเมี่ยม"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<TextView android:textSize="17dp"
+					android:text="สมัครสมาชิกพรีเมี่ยมดูได้ทันที"
+					android:layout_marginTop="5dp"
+					android:textColor="@color/colorGray"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<LinearLayout android:layout_marginTop="20dp"
+					android:orientation="horizontal"
+					android:gravity="center"
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content" >
+					<ImageView android:src="@drawable/diamond"
+						android:layout_marginLeft="10dp"
+						android:tint="#FFFFFF"
+						android:padding="3dp"
+						android:layout_width="45dp"
+						android:layout_height="45dp"/>
+					<TextView android:textSize="16dp"
+						android:text="คลังอนิเมะพรีเมี่ยม+"
+						android:layout_marginLeft="20dp"
+						android:textColor="#FFFFFF"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:gravity="center"
+
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content" >
+					<ImageView android:src="@drawable/hd"
+						android:tint="#FFFFFF"
+						android:layout_marginLeft="10dp"
+						android:padding="3dp"
+						android:layout_width="45dp"
+						android:layout_height="45dp"/>
+					<TextView android:textSize="16dp"
+						android:text="ความชัดระดับHD"
+						android:layout_marginLeft="20dp"
+						android:textColor="#FFFFFF"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:gravity="center"
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content" >
+					<ImageView android:src="@drawable/download"
+						android:tint="#FFFFFF"
+						android:layout_marginLeft="10dp"
+						android:padding="3dp"
+						android:layout_width="45dp"
+						android:layout_height="45dp"/>
+					<TextView android:textSize="16dp"
+						android:text="ดาวน์โหลดวิดีโอฟรี"
+						android:layout_marginLeft="20dp"
+						android:textColor="#FFFFFF"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<android.support.v7.widget.CardView 
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					xmlns:cardview="http://schemas.android.com/apk/res-auto" 
+					android:layout_width="200dp" 
+					android:layout_marginTop="20dp"
+					android:layout_height="45dp" 
+
+					cardview:cardBackgroundColor="#ec407a"
+					cardview:cardCornerRadius="5.0dip" 
+					cardview:cardElevation="0.0dip">
+					<RelativeLayout android:theme="@style/WatchDark" 
+						android:layout_width="match_parent" 
+						android:gravity="center"
+						android:layout_height="match_parent" 
+						android:foreground="?android:selectableItemBackground">
+						<TextView android:textSize="18dp"
+							android:textColor="#FFFFFF"
+							android:layout_centerVertical="true"
+
+							android:textStyle="bold"
+							android:text="สมัครทันที"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</RelativeLayout>
+				</android.support.v7.widget.CardView>
+			</LinearLayout>
+		</RelativeLayout>
+		<ImageView android:src="@drawable/close"
+			android:id="@+id/closepremium"
+			android:tint="#FFFFFF"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:layout_width="30dp"
+			android:layout_height="30dp"/>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:background="?colorPrimary"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout android:id="@+id/show_formation"
+					android:background="?attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="true"
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<TextView android:id="@+id/name_recom_anime"
+						android:paddingTop="15dp"
+						android:paddingLeft="15dp"
+						android:paddingRight="15dp"
+						android:layout_width="wrap_content"
+						android:textStyle="bold"
+						android:text="ไม่มีข้อมูล"
+						android:textSize="18dp"
+						android:layout_height="wrap_content"/>
+					<TextView android:layout_marginTop="5dp"
+						android:id="@+id/formation"
+						android:paddingLeft="15dp"
+						android:paddingRight="15dp"
+						android:layout_width="wrap_content"
+						android:textColor="?attr/colorControlNormal"
+						android:text="แนว"
+						android:textSize="15dp"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<LinearLayout android:gravity="center" 
+					android:orientation="vertical" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="10.0dip">
+					<LinearLayout android:gravity="center" 
+						android:orientation="horizontal"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15.0dip" 
+						android:layout_marginRight="15.0dip">
+						<LinearLayout android:gravity="center" 
+							android:orientation="vertical"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:foreground="?android:selectableItemBackground" 
+							android:layout_weight="1.0">
+							<ImageView android:gravity="center" 
+								android:layout_width="25.0dip"
+								android:layout_height="30.0dip"
+								android:src="@drawable/sub_icon"
+								app:tint="?android:textColorPrimary" />
+							<TextView android:textSize="12.0dip"
+								android:ellipsize="end"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="3.0dip"
+								android:text="ติดตามอนิเมะ" 
+								android:maxLines="1" />
+						</LinearLayout>
+						<LinearLayout android:gravity="center" 
+							android:orientation="vertical"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0">
+							<ImageView android:gravity="center"
+								android:layout_width="25.0dip" 
+								android:layout_height="30.0dip" 
+								android:src="@drawable/favorite_icon"
+								app:tint="?android:textColorPrimary" />
+							<TextView android:textSize="12.0dip"
+								android:ellipsize="end" 
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content" 
+								android:layout_marginTop="3.0dip"
+								android:text="รายการโปรด" 
+								android:maxLines="1" />
+						</LinearLayout>
+						<LinearLayout android:gravity="center"
+							android:orientation="vertical"
+							android:layout_width="0.0dip" 
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0">
+							<ImageView android:gravity="center"
+								android:layout_width="25.0dip" 
+								android:layout_height="30.0dip"
+								android:src="@drawable/sendfile_icon"
+								app:tint="?android:textColorPrimary" />
+							<TextView android:textSize="12.0dip" 
+								android:ellipsize="end" 
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:layout_marginTop="3.0dip" 
+								android:text="แจ้งวิดีโอเสีย" 
+								android:maxLines="1" />
+						</LinearLayout>
+						<LinearLayout android:gravity="center"
+							android:orientation="vertical" 
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content" 
+							android:layout_weight="1.0">
+							<ImageView android:gravity="center"
+								android:layout_width="25.0dip" 
+								android:layout_height="25.0dip" 
+								android:src="@drawable/recomended_icon" 
+								app:tint="?android:textColorPrimary" />
+							<TextView android:textSize="12.0dip"
+								android:ellipsize="end"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content" 
+								android:layout_marginTop="3.0dip" 
+								android:text="ข้อเสนอแนะ" 
+								android:maxLines="1" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<ImageView 
+				android:layout_alignParentEnd="true"
+				app:tint="?android:attr/textColorPrimary"
+				android:src="@drawable/left_icon_black"
+				android:layout_width="30dp"
+				android:layout_marginTop="15dp"
+				android:layout_marginRight="15dp"
+				android:rotation="-90"
+				android:gravity="center"
+				android:layout_height="30dp"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/see_all"
+			android:paddingLeft="15dp"
+			android:layout_marginTop="10dp"
+			android:background="?android:attr/selectableItemBackground"
+			android:paddingRight="15dp"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="45dp">
+			<TextView android:id="@+id/tv_count"
+				android:layout_marginTop="3dp"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:text="ทั้งหมด"
+				android:textSize="18dp"
+				android:layout_height="wrap_content"/>
+			<LinearLayout android:layout_marginTop="3dp"
+				android:padding="3dp"
+				android:layout_alignParentEnd="true"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:id="@+id/tv_count_up"
+					android:layout_width="wrap_content"
+					android:text="ทั้งหมด"
+					android:paddingLeft="5dp"
+					android:textSize="15dp"
+					android:layout_height="wrap_content"/>
+				<ImageView android:src="@drawable/right_icon_black"
+					android:padding="3dp"
+					android:layout_width="25dp"
+					app:tint="?attr/colorControlNormal"
+					android:layout_height="25dp"/>
+			</LinearLayout>
+		</RelativeLayout> 
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recy_ep"
+			android:clipToPadding="false"
+			android:paddingLeft="8dp"
+			android:layout_width="match_parent"
+			android:paddingRight="8dp"
+			android:layout_height="wrap_content"
+		>
+		</android.support.v7.widget.RecyclerView>
+	</LinearLayout>
+
+
+</LinearLayout>

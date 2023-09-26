@@ -1,0 +1,73 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:background="?colorPrimary"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:layout_width="match_parent"
+		android:id="@+id/toolbar"
+		android:elevation="4dp"
+		app:titleTextColor="?colorAccent"
+		app:contentInsetStartWithNavigation="0dp"
+		app:title="Doome"
+		app:navigationIcon="@drawable/ic_load"
+		app:contentInsetLeft="0dp"
+		app:contentInsetStart="0dp"
+		android:background="?colorPrimary"
+		app:titleMarginStart="0dp"
+		android:layout_height="?attr/actionBarSize">
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout 
+		android:layout_marginTop="75dp"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout android:id="@+id/hot_anime"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:visibility="gone"
+			android:gravity="center_horizontal"
+			android:textColor="@android:color/white"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="อนิเมะมาแรง"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_marginTop="11dp"
+				android:textSize="18dp"
+				android:textColor="@android:color/black"
+				android:layout_height="wrap_content"/>
+			<ImageButton android:id="@+id/go_animehot"
+				android:layout_alignParentEnd="true"
+				android:background="?android:attr/selectableItemBackground"
+				android:src="@drawable/ic_right"
+				android:layout_width="45dp"
+				android:layout_height="45dp"/>
+		</RelativeLayout> 
+		<android.support.v4.widget.SwipeRefreshLayout 
+			android:id="@+id/refresh" 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"> 
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerview"
+				android:layout_marginTop="5dp"
+				android:clipToPadding="false"
+				android:paddingLeft="8dp"
+				android:layout_width="match_parent"
+				android:paddingRight="8dp"
+				android:layout_height="fill_parent"
+			>
+			</android.support.v7.widget.RecyclerView>
+		</android.support.v4.widget.SwipeRefreshLayout>
+	</LinearLayout>
+
+
+</RelativeLayout>
+

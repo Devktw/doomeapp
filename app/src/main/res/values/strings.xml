@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Doome</string>
+    <string name="push_notification_channel">Doome</string>
+    
+</resources>

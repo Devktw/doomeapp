@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="160dp"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:layout_height="100dp">
+		<android.support.v7.widget.CardView
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:cardview="http://schemas.android.com/apk/res-auto"
+			android:layout_width="160dp"
+			android:layout_height="100dp"
+			cardview:cardUseCompatPadding="true"
+			cardview:cardCornerRadius="7dp">
+
+			<ImageView
+				android:id="@+id/ep_image"
+				android:layout_width="160dp"
+				android:layout_height="100dp"
+				android:scaleType="centerCrop"/>
+			<RelativeLayout 
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="62dp"
+				android:layout_height="wrap_content">
+				<ImageView 
+					android:background="@drawable/main_park"
+					android:layout_width="50dp"
+					android:layout_height="20dp"/>
+				<TextView android:text="ไม่มีข้อมูล"
+					android:id="@+id/subtitle"
+					android:layout_marginTop="2dp"
+					android:layout_centerHorizontal="true"
+					android:textSize="11dp"
+					android:textColor="@android:color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</RelativeLayout> 
+			<RelativeLayout android:background="@drawable/shadowcard"
+				android:layout_width="match_parent"
+				android:layout_marginTop="110dp"
+				android:layout_height="40dp">
+				<TextView android:text="ไม่ม่ข้อมูล"
+					android:id="@+id/ep_valus"
+					android:textSize="11dp"
+					android:layout_marginTop="18dp"
+					android:layout_marginLeft="5dp"
+					android:textStyle="bold"
+					android:textColor="@android:color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</RelativeLayout>
+		</android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/ep_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+			android:ellipsize="end" 
+			android:maxLines="2"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp"
+            android:text="ไม่มีข้อมุล"
+            android:textSize="13sp" />
+	</LinearLayout>
+</LinearLayout>
+

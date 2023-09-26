@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "17589222780",
+    "firebase_url": "https://doome-308fc-default-rtdb.firebaseio.com",
+    "project_id": "doome-308fc",
+    "storage_bucket": "doome-308fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17589222780:android:4995fc77f96577d317b8f9",
+        "android_client_info": {
+          "package_name": "com.mstudio.android.doome.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17589222780-g6sf8lcoj2a9vpd1rc3rdd0u9toflfar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mstudio.android.doome.app",
+            "certificate_hash": "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+          }
+        },
+        {
+          "client_id": "17589222780-fhkhm1da8m1rb12m2j4s6auc76n47l32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB71XDbMZPW0cVAP1Yi70hS2BXhwYMF7UQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17589222780-fhkhm1da8m1rb12m2j4s6auc76n47l32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

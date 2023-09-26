@@ -1,0 +1,233 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="?colorPrimary"
+	android:layout_height="fill_parent">
+	<RelativeLayout 
+		android:paddingLeft="15dp"
+		android:background="#1B1C21"
+		android:paddingRight="15dp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="80dp">
+		<ImageView android:src="@drawable/profile_noload"
+			android:layout_width="70dp"
+			android:layout_marginTop="10dp"
+			android:id="@+id/profile_login"
+			android:scaleType="centerCrop"
+			android:layout_height="70dp"/>
+		<LinearLayout android:orientation="vertical"
+			android:layout_marginTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:layout_marginLeft="80dp"
+				android:text="--"
+				android:layout_marginTop="10dp"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<FrameLayout android:layout_marginTop="5dp"
+				android:layout_marginLeft="80dp"
+				android:id="@+id/edit_profile"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/main_bottom_bg">
+				<LinearLayout android:background="?attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<TextView 
+						android:text="แก้ไขโปรไฟล์"
+						android:padding="2dp"
+						android:textSize="13sp"
+						android:textColor="?colorAccent"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_marginTop="20dp"
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="ประวัติการเข้าชม"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			android:layout_width="25dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_marginTop="5dp"
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="รายการโปรด"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			android:layout_width="25dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_marginTop="5dp"
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="ภาษา"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			android:layout_width="25dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_marginTop="5dp"
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="ตั้งค่า"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			android:layout_width="25dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:layout_marginTop="5dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="ข้อเสนอแนะ"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_width="25dp"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:background="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:layout_marginTop="10dp"
+		android:gravity="center_vertical"
+		android:id="@+id/about"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="เกี่ยวกับ"
+			android:textSize="16dp"
+			android:layout_marginLeft="15dp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageView
+			android:src="@drawable/right_icon_black"
+			android:padding="3dp"
+			app:tint="?attr/colorControlNormal"
+			android:layout_width="25dp"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="15dp"
+			android:layout_height="25dp"/>
+	</RelativeLayout>
+	<View android:layout_above="@+id/tvlog"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="15dp"
+		android:visibility="gone"
+		android:layout_marginLeft="15dp"
+		android:background="@color/colorGray"
+		android:layout_width="match_parent"
+		android:layout_height="0.5sp"/>
+	<RelativeLayout
+		android:gravity="center"
+		android:id="@+id/tvlog"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<TextView android:text="เข้าสู่ระบบ"
+			android:id="@+id/login"
+			android:textColor="@android:color/black"
+			android:textSize="16dp"
+			android:background="?android:attr/selectableItemBackground"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"/>
+		<TextView android:text="ออกจากระบบ"
+			android:textColor="@color/colorRed"
+			android:textSize="16dp"
+			android:id="@+id/logout"
+			android:background="?android:attr/selectableItemBackground"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"/>
+	</RelativeLayout>
+</LinearLayout>

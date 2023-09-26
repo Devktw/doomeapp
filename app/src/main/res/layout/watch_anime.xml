@@ -1,0 +1,356 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:app="http://schemas.android.com/apk/res-auto" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:background="?colorPrimary"> 
+	<LinearLayout
+		android:orientation="vertical"
+		android:background="?colorPrimary"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent">
+
+		<RelativeLayout android:background="@android:color/black"
+			android:layout_width="match_parent"
+			android:gravity="center"
+			android:layout_height="wrap_content">
+			<com.google.android.exoplayer2.ui.SimpleExoPlayerView
+				android:id="@+id/video_player"
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				app:use_controller="true"
+				android:layout_height="200dp"/>
+			<LinearLayout android:orientation="vertical"
+				android:id="@+id/layout_premium"
+				android:visibility="gone"
+				android:background="#ff000000"
+				android:gravity="center"
+				android:layout_width="match_parent" 
+				android:layout_height="200dp" >
+				<TextView android:textSize="20dp"
+					android:text="พิเศษสำหรับพรีเมี่ยม"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<TextView android:textSize="17dp"
+					android:text="สมัครสมาชิกพรีเมี่ยมดูได้ทันที"
+					android:layout_marginTop="5dp"
+					android:textColor="@color/colorGray"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<android.support.v7.widget.CardView 
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					xmlns:cardview="http://schemas.android.com/apk/res-auto" 
+					android:layout_width="200dp" 
+					android:layout_marginTop="20dp"
+					android:layout_height="45dp" 
+
+					cardview:cardBackgroundColor="#ec407a"
+					cardview:cardCornerRadius="5.0dip" 
+					cardview:cardElevation="0.0dip">
+					<RelativeLayout android:theme="@style/WatchDark" 
+						android:layout_width="match_parent" 
+						android:gravity="center"
+						android:layout_height="match_parent" 
+						android:foreground="?android:selectableItemBackground">
+						<TextView android:textSize="18dp"
+							android:textColor="#FFFFFF"
+							android:layout_centerVertical="true"
+
+							android:textStyle="bold"
+							android:text="สมัครทันที"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</RelativeLayout>
+				</android.support.v7.widget.CardView>
+			</LinearLayout>
+
+			<ImageView android:src="@drawable/ic_playagain"
+				android:layout_width="45dp"
+				android:layout_centerInParent="true"
+				android:focusable="true"
+				android:visibility="gone"
+				android:clickable="true"
+				android:id="@+id/play_again"
+				app:tint="@android:color/white"
+				android:padding="2dp"
+				android:layout_height="45dp"/>
+			<ProgressBar 
+				android:id="@+id/progress"
+			    android:layout_centerInParent="true"
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<LinearLayout 
+				android:layout_centerInParent="true"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:visibility="gone"
+				android:id="@+id/nointernet_lay"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"> 
+				<TextView android:text="เกิดข้อผิดพลาดในการเล่นวิดีโอ"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@android:color/white"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"/> 
+			</LinearLayout>
+			<View android:id="@+id/line_formation"
+				android:layout_marginTop="198dp"
+				android:visibility="gone"
+				android:background="#42FFFFFF"
+				android:layout_width="match_parent" 
+				android:layout_height="2sp"/> 
+			<ProgressBar android:layout_marginTop="198dp"
+				android:id="@+id/bufferbar"
+				android:background="@android:color/transparent"
+				android:progressDrawable="@drawable/custom_buffer"
+				style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" 
+				android:layout_width="match_parent"
+				android:layout_height="2dp"/>
+			<ProgressBar android:layout_marginTop="198dp"
+				android:id="@+id/progressBar"
+				android:background="@android:color/transparent"
+				android:progressDrawable="@drawable/custom_progress"
+				style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" 
+				android:layout_width="match_parent"
+				android:layout_height="2dp"/>
+
+		</RelativeLayout>
+
+
+		<FrameLayout android:id="@+id/content_formation"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent">
+		</FrameLayout>
+
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/bottom_ep"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="@drawable/rounded_dialog"
+		android:layout_width="match_parent"
+		app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+		app:behavior_hideable="true" 
+		app:behavior_peekHeight="504dp" 
+		android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/progressep"
+			android:layout_width="match_parent"
+			android:layout_marginTop="250dp"
+			android:layout_height="wrap_content"/>
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent">
+
+			<RelativeLayout 
+				android:paddingLeft="15dp"
+				android:id="@+id/linepro"
+				android:paddingRight="10dp"
+				android:clickable="true"
+				android:focusable="true"
+				android:layout_centerInParent="true"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp">
+				<TextView android:id="@+id/tv_count"
+					android:layout_alignParentStart="true"
+					android:layout_width="wrap_content"
+					android:layout_centerInParent="true"
+					android:textStyle="bold"	
+					android:text="ทั้งหมด"
+					android:textColor="?android:attr/textColorPrimary"
+					android:textSize="18dp"
+					android:layout_height="wrap_content"/>
+				<ImageView android:src="@drawable/right_icon_black"
+					android:padding="9dp"
+					android:id="@+id/hide"
+					android:rotation="90"
+					android:layout_alignParentEnd="true"
+					android:layout_width="45dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="true"
+					app:tint="?attr/colorControlNormal"
+					android:layout_height="45dp"/>
+			</RelativeLayout> 
+			<View android:id="@+id/linepro"
+				android:layout_above="@+id/bar"
+				android:background="@color/colorGray"
+				android:layout_width="match_parent" 
+				android:layout_height="0.1sp"/> 
+
+
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/ep_all"
+				android:clipToPadding="false"
+				android:paddingBottom="20dp"
+
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			>
+			</android.support.v7.widget.RecyclerView>
+		</LinearLayout>
+
+
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/bottom_seemore"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="@drawable/rounded_dialog"
+		android:layout_width="match_parent"
+		app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+		app:behavior_hideable="true" 
+		app:behavior_peekHeight="504dp" 
+		android:layout_height="fill_parent">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent">
+			<RelativeLayout 
+				android:paddingLeft="15dp"
+				android:id="@+id/linepro"
+				android:paddingRight="10dp"
+				android:clickable="true"
+				android:layout_centerInParent="true"
+				android:focusable="true"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp">
+				<TextView 
+					android:layout_width="wrap_content"
+					android:gravity="center_vertical"
+					android:layout_centerInParent="true"
+					android:layout_alignParentStart="true"
+					android:textStyle="bold"
+					android:text="รายละเอียด"
+					android:textColor="?android:attr/textColorPrimary"
+					android:textSize="18dp"
+					android:layout_height="wrap_content"/>
+				<ImageView android:src="@drawable/right_icon_black"
+					android:padding="9dp"
+					android:id="@+id/hide_seemore"
+					android:rotation="90"
+					android:layout_alignParentEnd="true"
+					android:layout_width="45dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="true"
+					app:tint="?attr/colorControlNormal"
+					android:layout_height="45dp"/>
+			</RelativeLayout> 
+			<View android:id="@+id/linepro"
+				android:layout_above="@+id/bar"
+				android:background="@color/colorGray"
+				android:layout_width="match_parent" 
+				android:layout_height="0.1sp"/> 
+
+			<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						android:layout_marginRight="12dp"
+						android:layout_marginLeft="10dp"
+						android:layout_height="150dp">
+						<android.support.v7.widget.CardView
+							xmlns:cardview="http://schemas.android.com/apk/res-auto"
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							cardview:cardUseCompatPadding="true"
+							android:layout_marginBottom="5dp"
+							cardview:cardCornerRadius="7dp"
+							android:orientation="vertical">
+							<ImageView
+								android:id="@+id/image_hot"
+								android:layout_width="110dp"
+								android:layout_height="150dp"
+								android:scaleType="centerCrop"/>
+						</android.support.v7.widget.CardView>
+
+
+						<LinearLayout android:layout_marginLeft="5dp"
+							android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+							<TextView
+								android:id="@+id/title_hot"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:textStyle="bold"
+								android:layout_marginLeft="4dp"
+								android:layout_weight="1"
+								android:text="-"
+								android:textSize="14sp" />
+							<TextView 
+								android:background="@drawable/cornor_formation"
+								android:id="@+id/year_about"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_marginLeft="4dp"
+								android:text="-"
+								android:textSize="13sp" />
+							<TextView
+								android:background="@drawable/cornor_formation"
+								android:id="@+id/formation_about"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_marginLeft="4dp"
+								android:text="-"
+								android:textSize="13sp" />
+							<TextView android:background="@drawable/cornor_formation"
+								android:id="@+id/seson_about"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_marginLeft="4dp"
+								android:text="-"
+								android:textSize="13sp" />
+							<TextView android:background="@drawable/cornor_formation"
+								android:id="@+id/valus_about"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_marginLeft="4dp"
+								android:text="-"
+								android:textSize="13sp" />
+						</LinearLayout>
+
+					</LinearLayout>
+					<LinearLayout android:layout_marginTop="30dp"
+						android:layout_marginLeft="12dp"
+						android:layout_marginRight="12dp"
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView android:text="เรื่องย่อ"
+							android:textSize="14dp"
+							android:textStyle="bold"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+						<TextView android:id="@+id/mini_story"
+							android:layout_marginTop="3dp"
+							android:text="-"
+							android:textSize="13dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+
+		</LinearLayout>
+	</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

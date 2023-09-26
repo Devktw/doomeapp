@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/ic_home_bottom"
+        android:id="@+id/doome"
+        android:title="ดูอนิเมะ"/>
+	<item android:icon="@drawable/ic_book"
+        android:id="@+id/manga"
+        android:title="อ่านมังงะ"/>
+	<item android:icon="@drawable/ic_account"
+        android:id="@+id/profile"
+        android:title="โปรไฟล์"/>
+</menu>
+

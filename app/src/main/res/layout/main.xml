@@ -1,0 +1,61 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<FrameLayout android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent">
+	</FrameLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:id="@+id/bottom_menu"
+		android:background="#1B1C21"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+		<LinearLayout android:gravity="center"
+			android:id="@+id/setfrag_anime"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:orientation="vertical"
+			android:theme="@style/DarkTheme"
+			android:layout_width="0dp"
+			android:padding="5dp"
+			android:layout_weight="1"
+			android:layout_height="50dp">
+			<ImageView android:src="@drawable/ic_anime_notab"
+				android:id="@+id/im_anime"
+				android:layout_width="25dp"
+				android:layout_height="25dp"/>
+			<TextView android:text="อนิเมะ"
+				android:id="@+id/tv_anime"
+				android:textSize="12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<LinearLayout 
+			android:id="@+id/setfrag_profile"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:gravity="center"
+			android:theme="@style/DarkTheme"
+			android:orientation="vertical"
+			android:padding="5dp"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="50dp">
+			<ImageView android:src="@drawable/ic_profile_notab"
+				android:id="@+id/im_profile"
+				android:layout_width="25dp"
+				android:layout_height="25dp"/>
+			<TextView android:text="บัญชี"
+				android:id="@+id/tv_profile"
+				android:textSize="12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
+
+

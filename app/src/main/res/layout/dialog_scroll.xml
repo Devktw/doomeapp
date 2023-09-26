@@ -1,0 +1,176 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+
+	android:gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RelativeLayout 
+		android:paddingBottom="20dp"
+		android:paddingTop="20dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:theme="@style/WatchDark"
+		android:background="@drawable/cornor_dialog" 
+		android:layout_width="wrap_content" 
+		android:layout_height="350dp" >
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content" >
+			<TextView android:textSize="18dp"
+
+				android:text="ความเร็วการเลื่อน"
+				android:layout_marginLeft="10dp"
+				android:textColor="?colorAccent"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<LinearLayout android:orientation="vertical"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" >
+				<RadioGroup android:id="@+id/fastgruop"
+					android:orientation="vertical"
+					android:gravity="center_vertical"
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/tabdefault"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:clickable="true"
+						android:focusable="true"
+						android:background="?android:attr/selectableItemBackground"
+						android:layout_width="match_parent" 
+						android:layout_height="40dp" >
+						<RadioButton 
+							android:id="@+id/defaultt" 
+							android:layout_marginLeft="10dp"
+							android:layout_width="30dp"
+							android:clickable="false"
+							android:layout_height="30dp"  /> 
+						<TextView android:text="ปรกติ"
+							android:textSize="16dp"
+							android:layout_marginLeft="10dp"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"/>
+
+					</LinearLayout>
+					<LinearLayout android:id="@+id/tabone"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:clipToPadding="false"
+						android:clickable="true"
+						android:focusable="true"
+						android:background="?android:attr/selectableItemBackground"
+						android:layout_width="match_parent" 
+						android:layout_height="40dp" >
+						<RadioButton 
+							android:id="@+id/one" 
+							android:layout_marginLeft="10dp"
+							android:layout_width="30dp"
+							android:clickable="false"
+							android:layout_height="30dp"  /> 
+						<TextView android:text="×2"
+							android:textSize="16dp"
+							android:layout_marginLeft="10dp"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+					<LinearLayout android:id="@+id/tabtwo"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:clickable="true"
+						android:focusable="true"
+						android:background="?android:attr/selectableItemBackground"
+						android:layout_width="match_parent" 
+						android:layout_height="40dp" >
+						<RadioButton android:id="@+id/two" 
+							android:layout_width="30dp" 
+							android:clickable="false"
+							android:layout_marginLeft="10dp"
+							android:layout_height="30dp" /> 
+						<TextView android:text="×3"
+							android:layout_width="wrap_content" 
+							android:layout_marginLeft="10dp"
+							android:textSize="16dp"
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+				</RadioGroup>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:gravity="center_vertical"
+				android:layout_height="wrap_content">
+				<TextView android:textSize="18dp"
+					android:layout_marginTop="10dp"
+					android:textStyle="bold"
+					android:layout_marginBottom="10dp"
+					android:layout_marginLeft="10dp"
+					android:textColor="?colorAccent"
+					android:text="ทั่วไป"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<LinearLayout android:orientation="horizontal"
+					android:layout_marginBottom="5dp"
+					android:layout_width="wrap_content"
+					android:gravity="center_vertical"
+					android:layout_height="wrap_content">
+					<Switch android:layout_marginLeft="5dp"
+						android:id="@+id/start_autoscroll"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+					<TextView android:text="เลื่อนอัตโนมัติเมื่อเริ่มอ่าน"
+						android:layout_width="wrap_content" 
+						android:layout_marginLeft="5dp"
+						android:textSize="16dp"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:gravity="center_vertical"
+					android:layout_height="wrap_content">
+					<Switch android:layout_marginLeft="5dp"
+						android:layout_width="wrap_content"
+						android:id="@+id/scroll_autoep"
+						android:layout_height="wrap_content" />
+					<TextView android:text="เลื่อนเสร็จไปตอนต่อไป"
+						android:layout_width="wrap_content" 
+						android:layout_marginLeft="5dp"
+						android:textSize="16dp"
+						android:layout_height="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+		<android.support.v7.widget.CardView 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:cardview="http://schemas.android.com/apk/res-auto" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginRight="10dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			cardview:cardBackgroundColor="@android:color/transparent"
+			cardview:cardCornerRadius="5.0dip" 
+			cardview:cardElevation="0.0dip">
+			<RelativeLayout 
+				android:theme="@style/WatchDark" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/dimisdialog"
+				android:layout_height="wrap_content" 
+				android:foreground="?android:selectableItemBackground">
+				<TextView android:textSize="17dp"
+					android:textColor="?colorAccent"
+					android:paddingLeft="20dp"
+					android:paddingRight="20dp"
+					android:paddingBottom="5dp"
+					android:paddingTop="5dp"
+					android:gravity="center"
+					android:text="ปิด"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			</RelativeLayout>
+		</android.support.v7.widget.CardView>
+	</RelativeLayout>
+</LinearLayout>
+

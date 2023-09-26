@@ -1,0 +1,182 @@
+<resources>
+
+	<style name="AppTheme.Launcher" parent="@style/AppTheme">
+		<item name="android:windowBackground">@drawable/splash</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+	</style>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="colorPrimaryDark">@color/colorprimarydark</item>
+        <item name="colorAccent">@color/coloraccent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:windowBackground">@color/colorprimary</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:navigationBarColor">#1B1C21</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+		<item name="bottomSheetDialogTheme">@style/bottomblack</item>
+
+    </style>
+	<style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+		<item name="colorPrimary">@color/darkbar</item>
+		<item name="colorPrimaryDark">@color/darkbar</item>
+		<item name="colorAccent">@color/act</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:windowBackground">@color/darkb</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textColorHint">@color/hintc</item>
+		<item name="android:navigationBarColor">@color/darkbar</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+		<item name="bottomSheetDialogTheme">@style/bottomblack</item>
+
+	</style>
+
+	<style name="bottomblack" parent="Theme.Design.BottomSheetDialog">
+		<item name="android:windowCloseOnTouchOutside">false</item>-->
+		<item name="colorPrimary">@color/colorprimary</item>
+		<item name="colorPrimaryDark">@color/colorprimary</item>
+		<item name="colorAccent">@color/act</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:navigationBarColor">?colorPrimary</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:colorBackground"> @android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+
+
+	</style>
+	<style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+		<item name="behavior_peekHeight">504dp</item>
+		<item name="behavior_hideable">true</item>
+
+	</style>
+	<style name="DialogAnimation">
+		<item name="android:windowEnterAnimation">@anim/up</item>
+		<item name="android:windowExitAnimation">@anim/bottom</item>
+	</style>
+	<style name="DarkAbout" parent="Theme.AppCompat.NoActionBar">
+		<item name="colorPrimary">@color/darkbar</item>
+		<item name="colorPrimaryDark">@color/darkbar</item>
+		<item name="colorAccent">@color/act</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:windowBackground">@color/darkbar</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textColorHint">@color/hintc</item>
+		<item name="android:navigationBarColor">@color/darkbar</item>
+		<item name="android:forceDarkAllowed">false</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+	</style>
+	<style name="WhiteAbout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="colorPrimaryDark">@color/colorprimarydark</item>
+        <item name="colorAccent">@color/coloraccent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:windowDisablePreview">true</item>	
+		<item name="android:windowBackground">@color/colorprimary</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:navigationBarColor">?colorPrimary</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+		</style>
+
+	<style name="WatchWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="colorPrimaryDark">#ff000000</item>
+        <item name="colorAccent">@color/coloraccent</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:windowDisablePreview">true</item>	
+		<item name="android:windowBackground">@color/colorprimary</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:navigationBarColor">?colorPrimary</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item> 
+		</style>
+
+	<style name="WatchDark" parent="Theme.AppCompat.NoActionBar">
+      	<item name="colorPrimary">@color/darkbar</item>
+		<item name="colorPrimaryDark">#ff000000</item>
+		<item name="colorAccent">@color/act</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:windowBackground">#444444</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textColorHint">@color/hintc</item>
+		<item name="android:navigationBarColor">@color/darkbar</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+    </style>
+
+
+	<style name="watch_anime" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#ff000000</item>
+        <item name="colorPrimaryDark">#ff000000</item>
+        <item name="colorAccent">@color/coloraccent</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+    </style>
+
+	<style name="CustomTabText" parent="TextAppearance.Design.Tab">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+	</style>
+	<style name="CustomToolbar" parent="TextAppearance.Design.Tab">
+		<item name="android:textSize">21sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+	</style>
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textSize">@dimen/toolbarTextsize</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">@font/dd</item>
+		<item name="fontFamily">@font/dd</item>
+	</style>
+	<style name="Readwhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="colorPrimaryDark">@color/colorprimarydark</item>
+        <item name="colorAccent">@color/coloraccent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:windowDisablePreview">true</item>	
+		<item name="android:windowBackground">@color/colorprimary</item>  
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:navigationBarColor">?colorPrimary</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+    </style>
+
+	<style name="ReadDark" parent="Theme.AppCompat.NoActionBar">
+		<item name="colorPrimary">@color/darkbar</item>
+		<item name="colorPrimaryDark">@color/darkbar</item>
+		<item name="colorAccent">@color/act</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:windowBackground">@color/darkb</item>  
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textColorHint">@color/hintc</item>
+		<item name="android:navigationBarColor">@color/darkbar</item>
+		<item name="android:fontFamily">@font/noto</item>
+		<item name="fontFamily">@font/noto</item>
+
+	</style>
+
+</resources>

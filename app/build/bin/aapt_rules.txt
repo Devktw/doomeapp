@@ -1,0 +1,233 @@
+# view res/layout/design_bottom_navigation_item.xml #generated:26
+-keep class android.support.design.internal.BaselineLayout { <init>(...); }
+
+# view res/layout/design_navigation_item.xml #generated:17
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(...); }
+
+# view res/layout/design_navigation_menu.xml #generated:17
+-keep class android.support.design.internal.NavigationMenuView { <init>(...); }
+
+# view res/layout/design_layout_snackbar_include.xml #generated:18
+-keep class android.support.design.internal.SnackbarContentLayout { <init>(...); }
+
+# view res/layout/design_text_input_password_icon.xml #generated:18
+-keep class android.support.design.widget.CheckableImageButton { <init>(...); }
+
+# view res/layout/design_bottom_sheet_dialog.xml #generated:26
+# view res/layout/watch_anime.xml #generated:1
+-keep class android.support.design.widget.CoordinatorLayout { <init>(...); }
+
+# view res/layout/design_layout_snackbar.xml #generated:18
+# view sw600dp-v13/res/layout-sw600dp-v13/design_layout_snackbar.xml #generated:18
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
+
+# view res/layout/home.xml #generated:106
+-keep class android.support.design.widget.TabLayout { <init>(...); }
+
+# view res/layout/home.xml #generated:118
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:41
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# view res/layout/anime_fragment.xml #generated:8
+# view res/layout/anime_fragment_more.xml #generated:8
+# view res/layout/anime_hot.xml #generated:39
+# view res/layout/dinamic_fomation.xml #generated:8
+# view res/layout/manga.xml #generated:64
+# view res/layout/read_manga.xml #generated:15
+# view res/layout/recy_nes.xml #generated:54
+# view res/layout/watch_manga.xml #generated:40
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view res/layout/abc_select_dialog_material.xml #generated:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:27
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_mode_bar.xml #generated:19
+# view res/layout/abc_screen_toolbar.xml #generated:43
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:44
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:17
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:26
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml #generated:18
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# view res/layout/dialog_premium.xml #generated:90
+# view res/layout/dialog_scroll.xml #generated:145
+# view res/layout/exo_playback_control_view.xml #generated:117
+# view res/layout/exo_playback_control_view.xml #generated:141
+# view res/layout/home.xml #generated:75
+# view res/layout/lis_item_ep_all.xml #generated:14
+# view res/layout/lis_item_ep_re.xml #generated:20
+# view res/layout/lis_item_ep_re.xml #generated:7
+# view res/layout/list_item.xml #generated:20
+# view res/layout/list_item.xml #generated:7
+# view res/layout/list_item_animehot.xml #generated:8
+# view res/layout/list_item_dinamic.xml #generated:20
+# view res/layout/list_item_dinamic.xml #generated:7
+# view res/layout/list_item_ep.xml #generated:8
+# view res/layout/list_item_general.xml #generated:20
+# view res/layout/list_item_general.xml #generated:7
+# view res/layout/list_item_hori.xml #generated:13
+# view res/layout/list_item_manga_about.xml #generated:13
+# view res/layout/list_item_mangahot.xml #generated:19
+# view res/layout/list_item_mangahot.xml #generated:7
+# view res/layout/list_item_mangarate.xml #generated:21
+# view res/layout/list_item_mangarate.xml #generated:8
+# view res/layout/list_item_re.xml #generated:21
+# view res/layout/list_item_re.xml #generated:8
+# view res/layout/list_manga_tvabout.xml #generated:17
+# view res/layout/list_manga_tvabout.xml #generated:35
+# view res/layout/list_read_manga.xml #generated:5
+# view res/layout/list_recom.xml #generated:31
+# view res/layout/manga.xml #generated:31
+# view res/layout/read_manga.xml #generated:86
+# view res/layout/search_activity.xml #generated:82
+# view res/layout/setting_manga.xml #generated:104
+# view res/layout/setting_manga.xml #generated:135
+# view res/layout/setting_manga.xml #generated:159
+# view res/layout/setting_manga.xml #generated:191
+# view res/layout/setting_manga.xml #generated:215
+# view res/layout/setting_manga.xml #generated:247
+# view res/layout/setting_manga.xml #generated:25
+# view res/layout/setting_manga.xml #generated:271
+# view res/layout/setting_manga.xml #generated:306
+# view res/layout/setting_manga.xml #generated:354
+# view res/layout/setting_manga.xml #generated:382
+# view res/layout/setting_manga.xml #generated:49
+# view res/layout/setting_manga.xml #generated:80
+# view res/layout/watch_anime.xml #generated:265
+# view res/layout/watch_anime.xml #generated:41
+-keep class android.support.v7.widget.CardView { <init>(...); }
+
+# view res/layout/abc_screen_content_include.xml #generated:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_title_material.xml #generated:45
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:44
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# view res/layout/abc_dialog_title_material.xml #generated:22
+# view res/layout/abc_screen_simple.xml #generated:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# view res/layout/anime_fragment.xml #generated:63
+# view res/layout/anime_fragment_more.xml #generated:64
+# view res/layout/anime_hot.xml #generated:95
+# view res/layout/dinamic_fomation.xml #generated:59
+# view res/layout/formation_anime.xml #generated:56
+# view res/layout/list_general.xml #generated:45
+# view res/layout/list_main.xml #generated:41
+# view res/layout/list_mangahot.xml #generated:41
+# view res/layout/list_mangarate.xml #generated:40
+# view res/layout/list_mangare.xml #generated:25
+# view res/layout/list_mangarecom.xml #generated:40
+# view res/layout/list_recom.xml #generated:59
+# view res/layout/list_recom_ep.xml #generated:182
+# view res/layout/list_recom_watch.xml #generated:31
+# view res/layout/manga.xml #generated:119
+# view res/layout/read_manga.xml #generated:72
+# view res/layout/recy_nes.xml #generated:58
+# view res/layout/search_activity.xml #generated:189
+# view res/layout/watch_anime.xml #generated:187
+# view res/layout/watch_manga.xml #generated:95
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:36
+# view res/layout/recy_nes.xml #generated:10
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:37
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# view res/layout/abc_screen_simple.xml #generated:25
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:43
+# view res/layout/abc_alert_dialog_material.xml #generated:52
+# view res/layout/abc_alert_dialog_material.xml #generated:66
+# view res/layout/abc_alert_dialog_title_material.xml #generated:56
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:53
+-keep class android.widget.Space { <init>(...); }
+
+# view res/layout/exo_simple_player_view.xml #generated:18
+-keep class com.google.android.exoplayer2.ui.AspectRatioFrameLayout { <init>(...); }
+
+# view res/layout/exo_playback_control_view.xml #generated:207
+-keep class com.google.android.exoplayer2.ui.DefaultTimeBar { <init>(...); }
+
+# view res/layout/player_layout.xml #generated:8
+# view res/layout/watch_anime.xml #generated:16
+-keep class com.google.android.exoplayer2.ui.SimpleExoPlayerView { <init>(...); }
+
+# view res/layout/exo_simple_player_view.xml #generated:35
+-keep class com.google.android.exoplayer2.ui.SubtitleView { <init>(...); }
+
+# view res/layout/exo_track_selection_dialog.xml #generated:20
+-keep class com.google.android.exoplayer2.ui.TrackSelectionView { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.mstudio.android.doome.app.Applications { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.mstudio.android.doome.app.DebugActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.mstudio.android.doome.app.VideoAnime { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.mstudio.android.doome.app.activity.about { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.mstudio.android.doome.app.activity.anime_hot { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.mstudio.android.doome.app.activity.read_manga { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.mstudio.android.doome.app.activity.search_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.mstudio.android.doome.app.activity.theme { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.mstudio.android.doome.app.activity.watch_anime { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.mstudio.android.doome.app.activity.watch_manga { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.mstudio.android.doome.app.main { <init>(...); }
+
